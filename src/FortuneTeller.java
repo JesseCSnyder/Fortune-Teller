@@ -30,7 +30,8 @@ public class FortuneTeller {
 		System.out.println("What month were you born in numerically?");
 		
 		birthMonth = input.nextInt();
-			input.nextLine();
+			
+		input.nextLine();      //line prevents input error
 		
 		System.out.println("What is your favorite ROYGBIV color?  "
 				+ "If you would like a list of those colors, please type 'Help' for assistance.");
@@ -72,11 +73,17 @@ public class FortuneTeller {
 		
 		switch(favColor.toLowerCase()) {
 		case "red": {modeTransport = "donkey";}
+		break;
 		case "orange":{modeTransport = "cheetah";}
+		break;
 		case "yellow":{modeTransport = "stilts";}
-		case "green":{modeTransport = "your feet";}
+		break;
+		case "green":{modeTransport = "foot";}
+		break;
 		case "blue":{modeTransport = "the bus";}
+		break;
 		case "indigo":{modeTransport = "bicycle";}
+		break;
 		case "violet":{modeTransport = "unicycle";}
 		break;}
 		
@@ -88,8 +95,8 @@ public class FortuneTeller {
 		{bankBalance = "$100,000";}
 		else {bankBalance = "$1";}
 		
-		System.out.println(firstName + lastName + " will retire in " +retireYear+ " with " +bankBalance+ " in the bank, "
-				+ "a vacation home in " +vacationHome+", and travel by " + modeTransport+".");
+		System.out.println(firstName+" "+lastName+ " will retire in " +retireYear+ " with " +bankBalance+ " in the bank, "
+				+ "a vacation home in " +vacationHome+", and travel by " +modeTransport+".");
 		
 		input.close();
 			
