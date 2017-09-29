@@ -50,8 +50,8 @@ public class FortuneTeller {
 		numSiblings = input.nextInt();
 		
 		String retireYear;
-		String vacationHome = "init";
-		String modeTransport = "init";
+		String vacationHome;
+		String modeTransport;
 		String bankBalance;
 		
 		if (age%2 == 0)
@@ -70,6 +70,7 @@ public class FortuneTeller {
 		{vacationHome = "Madrid, Spain";}
 		else if(numSiblings < 0)
 		{vacationHome = "Chillicothe, Ohio";}
+		else {vacationHome = "Chillicothe, Ohio";}
 		
 		switch(favColor.toLowerCase()) {
 		case "red": {modeTransport = "donkey";}
@@ -85,7 +86,8 @@ public class FortuneTeller {
 		case "indigo":{modeTransport = "bicycle";}
 		break;
 		case "violet":{modeTransport = "unicycle";}
-		break;}
+		break;
+		default: {modeTransport = "flying carpet";}}
 		
 		if((birthMonth >=1) && (birthMonth <=4))
 		{bankBalance = "$150,000";}
