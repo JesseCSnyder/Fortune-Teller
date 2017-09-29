@@ -81,7 +81,7 @@ public class FortuneTeller {
 		break;
 		case "green":{modeTransport = "foot";}
 		break;
-		case "blue":{modeTransport = "the bus";}
+		case "blue":{modeTransport = "bus";}
 		break;
 		case "indigo":{modeTransport = "bicycle";}
 		break;
